@@ -102,6 +102,7 @@ foreach ($file in $files){
 
 Write-Host "`n"
 
+#If an anticipated error found above, open the error file.
 IF ($isError){
 	Invoke-Item $errorFile
 }
